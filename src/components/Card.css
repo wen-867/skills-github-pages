@@ -1,0 +1,36 @@
+:root {
+    --dark-grey: #1b1b32;
+    --light-grey: #f5f6f7;
+    --dark-orange: #f89808;
+  }
+  
+  .flex-container {
+    background-color: var(--dark-grey);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: auto;
+  }
+  
+  .card {
+    border: 5px solid var(--dark-orange);
+    border-radius: 10px;
+    width: 25vw;
+    height: 25vh;
+    padding: 20px;
+    margin: 10px;
+    background-color: var(--light-grey);
+  }
+  
+  .card-title {
+    border-bottom: 4px solid var(--dark-orange);
+    width: fit-content;
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      width: 100%;
+    }
+  }
